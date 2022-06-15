@@ -23,7 +23,7 @@ void moveZeroes(int* nums, int numsSize){
     }
 }
 
-int main(){
+void main(){
     int nums[] = {0, 1, 2, 0, 3, 1, 0};
     moveZeroes(nums, 7);
     for (int i = 0; i < 7; i++){

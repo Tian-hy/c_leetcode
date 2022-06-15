@@ -23,7 +23,7 @@ int removeDuplicates(int* nums, int numsSize){
     return j;
 }
 
-int main(){
+void main(){
     int nums[] = {3, 4, 4, 5};
     int numsSize = sizeof(nums)/sizeof(int);
     int len = removeDuplicates(nums, numsSize);

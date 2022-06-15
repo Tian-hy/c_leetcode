@@ -17,7 +17,7 @@ int removeElement(int* nums, int numsSize, int val){
     return j;
 }
 
-int main(){
+void main(){
     int data[]={1, 2, 3, 3, 4, 1, 2}, numsSize=7, val=3;
     int j=removeElement(data, numsSize, val);
 
