@@ -1,5 +1,4 @@
 /**
- * @file move_zeros.c
  * @author tian_hy
  * LeetCode link: https://leetcode.cn/problems/kth-largest-element-in-an-array/
  * Time Complexity: O(nlgn) 用了快排

@@ -1,5 +1,4 @@
 /**
- * @file remove_elements.c
  * @author tian_hy
  * LeetCode link: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
  * Time Complexity: O(n)

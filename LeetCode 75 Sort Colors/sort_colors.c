@@ -1,5 +1,4 @@
 /**
- * @file move_zeros.c
  * @author tian_hy
  * LeetCode link: https://leetcode.com/problems/sort-colors/
  */
