@@ -1,6 +1,6 @@
 /**
  * @author tian_hy
- * LeetCode link: https://leetcode.com/problems/sort-colors/
+ * LeetCode link: https://leetcode.com/problems/merge-sorted-array/
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */
