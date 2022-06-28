@@ -10,22 +10,38 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-class Solution:
 
-    def show(self, h):
-        while h:
-            print(h.val, end=" ")
-            h = h.next
-        print(" ")
+class Solution:
+    def merge(self, left, right):
+        dummy_head = tail = ListNode(None)
+        while left and right:
+            if left.val <= right.val:
+                tail.next = left
+                left = left.next
+            else:
+                tail.next = right
+                right = right.next
+            tail = tail.next
+        if left and right is None:
+            tail.next = left
+        elif right and left is None:
+            tail.next = right
+        return dummy_head.next
 
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if not head or not head.next:
+        if head is None or head.next is None:
             return head
-        
-        pre, slow, fast = ListNode(None, None), head, head
+
+        pre = None
+        slow = head
+        fast = head
+
         while fast and fast.next:
-            print(pre.val, slow.val, fast.val)
-            pre, slow, fast = slow, slow.next, fast.next.next
+            pre = slow
+            slow = slow.next
+            fast = fast.next.next
         pre.next = None
+        return self.merge(*map(self.sortList, (head, slow)))
+
 # @lc code=end
 
